@@ -55,6 +55,7 @@ final class Custom_Job_Search {
 	 * e.g. include_once CUSTOM_JOB_SEARCH_ABSPATH . 'includes/foo.php';
 	 */
 	private function includes() {
+		include_once CUSTOM_JOB_SEARCH_ABSPATH . 'includes/util.php';
 	}
 
 	/**
