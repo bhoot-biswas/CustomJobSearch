@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     Custom Job Search
+ * Plugin Name:     Custom Job Search for WP Job Manager
  * Plugin URI:      PLUGIN SITE HERE
  * Description:     PLUGIN DESCRIPTION HERE
  * Author:          YOUR NAME HERE
@@ -12,4 +12,14 @@
  * @package         Custom_Job_Search
  */
 
-// Your code starts here.
+defined( 'ABSPATH' ) || exit;
+
+// Define CUSTOM_JOB_SEARCH_PLUGIN_FILE.
+if ( ! defined( 'CUSTOM_JOB_SEARCH_PLUGIN_FILE' ) ) {
+	define( 'CUSTOM_JOB_SEARCH_PLUGIN_FILE', __FILE__ );
+}
+
+// Include the main Custom_Job_Search class.
+if ( ! class_exists( 'Custom_Job_Search' ) ) {
+	include_once dirname( __FILE__ ) . '/includes/class-custom-job-search.php';
+}
