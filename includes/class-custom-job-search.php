@@ -56,6 +56,7 @@ final class Custom_Job_Search {
 	 */
 	private function includes() {
 		include_once CUSTOM_JOB_SEARCH_ABSPATH . 'includes/util.php';
+		include_once CUSTOM_JOB_SEARCH_ABSPATH . 'includes/class-custom-job-search-shortcode.php';
 	}
 
 	/**
@@ -67,4 +68,3 @@ final class Custom_Job_Search {
 		return untrailingslashit( plugins_url( '/', CUSTOM_JOB_SEARCH_PLUGIN_FILE ) );
 	}
 }
-Custom_Job_Search::instance();

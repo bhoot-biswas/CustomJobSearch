@@ -22,4 +22,5 @@ if ( ! defined( 'CUSTOM_JOB_SEARCH_PLUGIN_FILE' ) ) {
 // Include the main Custom_Job_Search class.
 if ( ! class_exists( 'Custom_Job_Search' ) ) {
 	include_once dirname( __FILE__ ) . '/includes/class-custom-job-search.php';
+	Custom_Job_Search::instance();
 }
