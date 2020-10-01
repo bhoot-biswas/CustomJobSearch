@@ -26,6 +26,15 @@ class Shortcode {
 	public function add_shortcode() {
 		add_shortcode( 'custom_job_search', array( $this, 'render_custom_job_search' ) );
 	}
+
+	/**
+	 * [render_custom_job_search description]
+	 * @param  array  $atts [description]
+	 * @return [type]       [description]
+	 */
+	public function render_custom_job_search( $atts = array(), $content = null ) {
+		return 'Hello World!';
+	}
 }
 
 new Shortcode();
