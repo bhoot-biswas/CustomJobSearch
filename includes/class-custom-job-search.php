@@ -5,7 +5,7 @@
  * @package Custom_Job_Search
  */
 
-namespace BengalStudio;
+namespace BengalStudio\Custom_Job_Search;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -46,7 +46,7 @@ final class Custom_Job_Search {
 	 * Define CJS Constants.
 	 */
 	private function define_constants() {
-		define( 'CUSTOM_JOB_SEARCH_VERSION', '0.0.1' );
+		define( 'CUSTOM_JOB_SEARCH_VERSION', '0.1.0' );
 		define( 'CUSTOM_JOB_SEARCH_ABSPATH', dirname( CUSTOM_JOB_SEARCH_PLUGIN_FILE ) . '/' );
 	}
 
@@ -56,7 +56,7 @@ final class Custom_Job_Search {
 	 */
 	private function includes() {
 		include_once CUSTOM_JOB_SEARCH_ABSPATH . 'includes/util.php';
-		include_once CUSTOM_JOB_SEARCH_ABSPATH . 'includes/class-custom-job-search-shortcode.php';
+		include_once CUSTOM_JOB_SEARCH_ABSPATH . 'includes/class-shortcode.php';
 	}
 
 	/**
@@ -68,3 +68,5 @@ final class Custom_Job_Search {
 		return untrailingslashit( plugins_url( '/', CUSTOM_JOB_SEARCH_PLUGIN_FILE ) );
 	}
 }
+
+Custom_Job_Search::instance();
