@@ -44,7 +44,7 @@ class Shortcode {
 
 		\ob_start();
 		?>
-		<div class="custom_job_search">
+		<div class="custom-job-search">
 			<form method="GET" action="<?php echo esc_url( $permalink ); ?>">
 				<p>
 					<label for="keywords"><?php _e( 'Keywords', 'custom-job-search' ); ?></label>
